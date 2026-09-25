@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Room Reservation</title>
+</head>
+<body>
+
+  <header class="header-color">
+    <div class="header-layout">
+    <h1>Room Reservation</h1>
+    <p>Submit a room request to reserve a room.</p>
+    </div>
+  </header>
+
+  <main class="header-layout">
+    <section class="intro-layout">
+      <h2>Before You Submit</h2>
+      <p>
+        Complete the required fields below. Please have your people soft ID number information ready.</p>
+    </section>
+
+    <section>
+      <h2>Room Details</h2>
+
+      <form method="get">
+        <fieldset>
+          <legend>Student Information</legend>
+
+          <div class="form-group">
+          <label for="studentPeopleSoftID">Student PeopleSoft ID</label>
+          <input
+            id="StudentPeopleSoftID"
+            name="StudentPeopleSoftID"
+            type="text"
+            required
+          >
+          </div>
+
+          <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input
+            id="studentName"
+            name="studentName"
+            type="text"
+            required
+          >
+          </div>
+
+          <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input
+            id="studentName"
+            name="studentName"
+            type="text"
+            required
+          >
+          </div>
+
+          <div class="form-group">
+          <label for="roomReservationDate">Room Reservation Date</label>
+          <input
+            id="roomReservationDate"
+            name="roomReservationDate"
+            type="date"
+            required
+          >
+          </div>
+
+          <div class="form-group">
+          <label for="roomnumber">Room Number</label>
+          <select
+            id="roomnumber"
+            name="roomnumber"
+            required
+          >
+            <option value="">Choose a room</option>
+            <option value="roomBM274">Room BM274</option>
+            <option value="roomBM275">Room BM275</option>
+            <option value="roomBM276">Room BM276</option>
+            <option value="roomBM277">Room BM277</option>
+            <option value="roomBM278">Room BM278</option>
+            <option value="roomTP152">Room TP152</option>
+            <option value="roomTP153">Room TP153</option>
+            <option value="roomTP154">Room TP154</option>
+            <option value="roomTP155">Room TP155</option>
+            <option value="roomTP156">Room TP156</option>
+          </select>
+          </div>
+          
+          <div class="form-group">
+          <label for="amount">Amount of People</label>
+          <input
+            id="amount"
+            name="amount"
+            type="number"
+            required
+            min="1"
+            step="1"
+          >
+          </div>
+
+          <div class="form-group">
+          <label for="reason">Reason</label>
+          <select
+            id="reason"
+            name="reason"
+            required
+          >
+            <option value="">Choose a reason</option>
+            <option value="invdividualStudy">Individual Study</option>
+            <option value="studentOrganization">Student Organization</option>
+            <option value="groupProject">Group Project</option>
+            <option value="conference/Meeting/Workshop">Conference/Meeting/Workshop</option>
+            <option value="interview">Interview</option>
+            <option value="collegeApprovedEvents">College-Approved Events</option>
+            <option value="other">Other</option>
+          </select>
+          </div>
+          
+          <div class="form-group">
+          <label for="description">Student Purpose / Description / Extra Accommodations</label>
+          <br>
+          <textarea
+            id="description"
+            name="description"
+            rows="4"
+            cols="45"
+            required
+          ></textarea>
+          </div>
+
+          <div class="checkbox-layout">
+          <input
+            id="receiptAttached"
+            name="receiptAttached"
+            type="checkbox"
+            value="yes"
+          > 
+          <label for="receiptAttached">
+            Receipt attached
+          </label>
+          </div>
+        </fieldset>
+
+
+        <button type="submit">
+          Submit Request
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer-layout">
+    <p>MIS 3371 — Room reservation system</p>
+  </footer>
+
+</body>
+</html>
