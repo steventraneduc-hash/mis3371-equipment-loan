@@ -140,8 +140,9 @@ button:hover {
 }
 
 .footer-layout {
+  text-align: center;
   margin-top: 32px;
-  color: #676B72;
+  color: #7082a4;
   background: #FFFFFF;
   border-top: 1px solid #E4E5E7;
 }
